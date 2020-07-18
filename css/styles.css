@@ -1,0 +1,583 @@
+:root {
+    font-size: 20px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.150rem;
+    color: #393939;
+}
+
+h1, h2, h3, h4, a {
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    height: 31.450rem;
+    background-image:    url(../img/bg-header-min.jpg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#sticky {
+    position: fixed;
+    width: 100%;
+    height: 3.700rem;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+#sticky.opaque {
+    background-color: rgba(7, 6, 57, 0.85);
+}
+
+#sticky.opaque #sticky-logo,
+#sticky.opaque #sticky-logo-text {
+    visibility: visible;
+}
+
+#sticky-logo {
+    width: 2.750rem;
+    height: 2.750rem;
+    margin: .350em 0 0 .500em;
+    background-image: url(../img/logo-white-sticky.png);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    display: inline-block;
+    visibility: hidden;
+}
+
+#sticky-logo-text {
+    position: absolute;
+    width: 17.000rem;
+    height: 2.550rem;
+    left: 1.100em;
+    top: 1.100em;
+    font-weight: 900;
+    font-size: 1.200rem;
+    line-height: 1.400rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    visibility: hidden;
+}
+
+#social-network {
+    display: none;
+    position: absolute;
+    right: .500em;
+    top: 1.350em;
+}
+
+#social-network a {
+    display: inline-block;
+    width: 1.650rem;
+    height: 1.618rem;
+    padding: .250em;
+}
+
+#social-network a img {
+    height: 100%;
+}
+
+#header-content {
+    text-align: center;
+}
+
+#header-logo {
+    display: inline-block;
+    width: 3.700rem;
+    height: 3.700rem;
+    margin-top: 7.050em;
+    background-image: url(../img/logo-white.png);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#header-logo-text {
+    font-weight: 900;
+    font-size: 2.400rem;
+    line-height: 2.800rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#header-line {
+    color: #FFFFFF;
+    width: 6.600rem;
+    margin-top: .750em;
+    margin-bottom: .750em;
+}
+
+#header-explanation {
+    display: inline-block;
+    margin: 0 7.050em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#header-explanation-large {
+    font-size: 1.500rem;
+    line-height: 1.750rem;
+}
+
+.text-regular {
+    font-weight: normal;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-bolder {
+    font-weight: 900;
+}
+
+#main-content section#intro {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: -7.500em;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    box-shadow: 0em .200em 1.650em rgba(0, 0, 0, 0.2);
+}
+
+#intro-img {
+    flex: 1;
+    background-image: url(../img/intro.png);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#intro-text {
+    flex: 1;
+    text-align: center;
+    padding: 2.850em 3.150em;
+    position: relative;
+}
+
+#intro-line {
+    width: 79%;
+    color: #E5E5E5;
+    margin-top: 2.500em;
+    margin-bottom: 2.500em;
+}
+
+#main-content section {
+    margin: 0 auto;
+    margin-top: 2.400em;
+}
+
+#main-content section h2 {
+    font-weight: bold;
+    font-size: 1.500rem;
+    line-height: 1.750rem;
+    text-align: center;
+    color: #500759;
+}
+
+#main-content section p {
+    text-align: center;
+}
+
+#targets {
+    width: 65%;
+}
+
+#targets-bg-deco {
+    width: 100%;
+    height: 24.950rem;
+    background: #1C336C;
+    margin-top: -24.950rem;
+}
+
+.four-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.450em;
+}
+
+.four-cards > div {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.four-cards > div > div {
+    flex: 1;
+    background: #FFFFFF;
+    box-shadow: 0em .200em 1.650em rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.four-cards > div:first-child {
+    margin-bottom: .400em;
+}
+
+.four-cards > div:last-child {
+    margin-top: .400em;
+    padding-bottom: 2.450em;
+}
+
+.four-cards > div > div:first-child {
+    margin-right: .400em;
+}
+
+.four-cards > div > div:last-child {
+    margin-left: .400em;
+}
+
+.targets-cards-icon {
+    margin-top: 2.450em;
+    width: 3.981rem;
+    height: 2.700rem;
+    display: inline-block;
+    background-size:     contain;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.targets-cards-content {
+    margin: 0 1.350em 1.450em 1.350em;
+}
+
+.targets-cards-content h4 {
+    font-weight: bold;
+    font-size: .900rem;
+    line-height: 1.050rem;
+    text-align: center;
+    color: #112D76;
+}
+
+#main-content .targets-cards-content p {
+    font-weight: normal;
+    font-size: .800rem;
+    line-height: .950rem;
+    text-align: center;
+    color: #393939;
+}
+
+#targets-cards-one {
+    background-image: url(../img/target-card-one.png);
+}
+
+#targets-cards-two {
+    background-image: url(../img/target-card-two.png);
+}
+
+#targets-cards-three {
+    background-image: url(../img/target-card-three.png);
+}
+
+#targets-cards-four {
+    background-image: url(../img/target-card-four.png);
+}
+
+#offers {
+    width: 68%;
+}
+
+#offers .four-cards  {
+    margin: 0 3.200em;
+}
+
+.offers-cards-content h4 {
+    font-weight: bold;
+    font-size: .900rem;
+    line-height: 1.050rem;
+    text-align: center;
+    color: #500759;
+    margin-top: 2.450em;
+    margin-bottom: .400em;
+}
+
+#main-content .offers-cards-content p {
+    font-weight: normal;
+    font-size: .800rem;
+    line-height: .950rem;
+    text-align: center;
+    color: #393939;
+}
+
+.hours {
+    color: #47ABAD;
+}
+
+.hours-number {
+    font-weight: bold;
+    font-size: 3.200rem;
+    line-height: 3.750rem;
+    text-align: center;
+}
+
+.hours-of-drive {
+    margin-top: -.400em;
+}
+
+.price {
+    font-weight: bold;
+    font-size: .800rem;
+    line-height: .950rem;
+    text-align: center;
+    color: #112D76;
+    margin-top: 1.450em;
+    margin-bottom: 1.450em;
+}
+
+#main-content section#conditions {
+    margin: 1.450em 0;
+}
+
+#conditions {
+    display: flex;
+    flex-direction: row;
+}
+
+#conditions-bg-deco {
+    position: relative;
+    width: 17.250rem;
+}
+
+#conditions-bg-deco div {
+    position: absolute;
+    bottom: 0;
+    width: 23.050rem;
+    height: 90%;
+    background-image: url(../img/bg-conditions.png);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    z-index: 0;
+}
+
+#conditions-content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    margin-right: 1.450em;
+    margin-bottom: 3.600em;
+    padding: 0 .800em .800em 0;
+    background: #FFFFFF;
+    box-shadow: 0em .200em 1.650em rgba(0, 0, 0, 0.2);
+}
+
+.condition {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3.600em;
+    margin-bottom: .950em;
+}
+
+.condition-nth {
+    font-weight: bold;
+    font-size: 3.200rem;
+    line-height: 3.750rem;
+    text-align: center;
+    color: #112D76;
+    margin-right: .650em;
+}
+
+#main-content .condition-content h4 {
+    font-weight: bold;
+    font-size: 1.200rem;
+    line-height: 1.400rem;
+    color: #112D76;
+    text-align: left;
+    margin-top: .700em;
+}
+
+#main-content .condition ul {
+    padding-left: .850em;
+}
+
+#main-content .condition-content p,
+#main-content .condition-content ul li,
+#main-content .condition-content p a {
+    font-weight: normal;
+    font-size: .800rem;
+    line-height: .950rem;
+    color: #393939;
+    text-align: left;
+}
+
+#main-content .condition-content p a {
+    font-weight: bold;
+}
+
+footer {
+    background: #1C336C;
+    color: #FFFFFF;
+    padding: 2.050em 5.800em 0 5.800em;
+}
+
+#footer-main-section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.450em;
+}
+
+#footer-contact {
+    margin-left: 2.450em;
+    flex: 1;
+}
+
+#footer-social {
+    flex: 1;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:visited {
+    color: #FFFFFF;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: .900rem;
+    line-height: 1.050rem;
+    margin-top: 0;
+}
+
+#footer-logo {
+    width: 5.300rem;
+    height: 5.300rem;
+    background-image: url(../img/logo-white-footer.png);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#footer-hash-tag {
+    font-weight: bold;
+    font-size: .800rem;
+    line-height: .950rem;
+    margin-top: 3.450em;
+}
+
+footer hr {
+    background: #FFFFFF;
+}
+
+#footer-legal {
+    text-align: center;
+}
+
+#footer-legal a {
+    display: inline-block;
+    font-size: .700rem;
+    line-height: .800rem;
+    padding: 1.100em;
+}
+
+#main-content section#legal-page {
+    width: 75%;
+}
+
+#main-content section#legal-page h2,
+#main-content section#legal-page h3,
+#main-content section#legal-page p {
+    text-align: left;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    :root {
+        font-size: 25px;
+    }
+
+    #header-logo-text  {
+        font-size: 1.750rem;
+    }
+
+    #header-explanation {
+        margin: 0 2em;
+    }
+
+    #intro-img {
+        /*display: none;*/
+        width: 30%;
+        flex: none;
+    }
+
+    #intro-text {
+        padding: 1em;
+    }
+
+    .fours-cards {
+        margin: 0;
+    }
+
+    .four-cards > div {
+        flex-direction: column;
+    }
+
+    .four-cards > div:first-child,
+    .four-cards > div:last-child {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .four-cards > div > div:first-child,
+    .four-cards > div > div:last-child {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: .400em;
+    }
+
+    .targets-cards-content p {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    #offers .four-cards {
+        margin: 0;
+    }
+
+    #main-content section#targets, 
+    #main-content section#offers {
+        width: initial;
+        margin: 0 4em;
+    }
+
+    #conditions-bg-deco {
+        /*width: .600rem;*/
+        width: 8em;
+    }
+
+    #footer-main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-logo {
+        margin: 0 auto;
+    }
+
+    #footer-contact {
+        margin-top: .500em;
+        margin-left: 0;
+    }
+
+    footer h3 {
+        margin-top: 1em;
+    }
+}
